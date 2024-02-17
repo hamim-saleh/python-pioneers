@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrollbar */
+  padding-bottom: 40px; /* Adjust as needed based on footer height */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px; /* Adjust the padding */
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color: #ff4500; /* Change the color on hover */
+}
+
+main {
+  padding-top: 70px; /* Adjust as needed based on header height */
+}
+
+section {
+  padding: 20px;
+  padding-bottom: 70px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; /* Ensure footer stays above other content */
+}
+
+#parallax {
+  background-image: url('image1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 85vh; /* Adjust as needed */
+  position: relative;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+body {
+  font-family: 'Oswald', monospace;
+  font-size: 18px;
+}
+
+.description {
+  font-family: 'Oswald', monospace; /* Apply the font to the description */
+  text-align: center;
+  font-size: 55px;
+  position: fixed;
+  top: 50%; /* Position the top of the description at the vertical center */
+  left: 50%; /* Position the left of the description at the horizontal center */
+  transform: translate(-50%, -50%) scale(0.5); /* Start small and center horizontally and vertically */
+  color: #ffffff;
+  animation: zoomIn 2.5s ease forwards; /* Apply the zoom animation */
+}
+
+@keyframes zoomIn {
+  from {
+      transform: translate(-50%, -50%) scale(0.5); /* Start from a smaller size and center */
+      transform-origin: 50% 50%; /* Scale from the center */
+  }
+  to {
+      transform: translate(-50%, -50%) scale(1); /* End at the original size and center */
+      transform-origin: 50% 50%; /* Scale from the center */
+  }
+}
